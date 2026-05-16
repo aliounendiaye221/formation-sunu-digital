@@ -407,7 +407,7 @@ export default function LandingPage() {
           </p>
           <div style={{ margin: '0 auto 2rem', padding: '1.5rem', background: 'rgba(0, 132, 61, 0.05)', borderRadius: '16px', maxWidth: '500px', border: '2px dashed var(--senegal-green)' }}>
             <p style={{ fontSize: '0.9rem', color: '#999', marginBottom: '0.3rem', textDecoration: 'line-through' }}>Valeur réelle : 25 000F/mois</p>
-            <p style={{ fontSize: '2.8rem', fontWeight: 900, color: 'var(--senegal-green)', lineHeight: 1 }}>4 500F<span style={{ fontSize: '1rem', fontWeight: 600 }}>/mois</span></p>
+            <p className="price-big" style={{ lineHeight: 1 }}>4 500F<span style={{ fontSize: '1rem', fontWeight: 600 }}>/mois</span></p>
             <p style={{ fontSize: '0.95rem', color: '#555', marginTop: '0.5rem' }}>soit <strong>150F par jour</strong> — le prix d'un café ☕</p>
           </div>
           <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn-primary btn-pulse" style={{ padding: '1.2rem 2.5rem', fontSize: '1.15rem' }} onClick={() => trackWhatsAppClick('bridge_button')}>
@@ -559,7 +559,7 @@ export default function LandingPage() {
             <div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
               <p style={{ fontSize: '0.85rem', color: '#999', textDecoration: 'line-through', marginBottom: '0.2rem' }}>25 000F/mois</p>
               <h3 style={{ marginBottom: '0.3rem' }}>
-                <span style={{ fontSize: '2.5rem', fontWeight: 900, color: 'var(--senegal-green)' }}>4 500F</span>
+                <span className="price-big">4 500F</span>
                 <span style={{ fontSize: '1rem', color: '#666' }}>/mois</span>
               </h3>
               <p style={{ fontSize: '0.85rem', color: 'var(--senegal-red)', fontWeight: 700 }}>🔥 -82% — Offre de lancement limitée</p>
@@ -636,7 +636,7 @@ export default function LandingPage() {
             </div>
             <div style={{ background: 'rgba(0,0,0,0.25)', borderRadius: '20px', padding: '2rem', marginBottom: '2.5rem', textAlign: 'center', backdropFilter: 'blur(10px)' }}>
               <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.95rem', textDecoration: 'line-through', marginBottom: '0.3rem' }}>Prix normal : 25 000F/mois</p>
-              <p style={{ fontSize: '3.5rem', fontWeight: 900, color: '#FDEF42', lineHeight: 1, marginBottom: '0.3rem' }}>4 500F<span style={{ fontSize: '1.2rem', fontWeight: 600 }}>/mois</span></p>
+              <p className="price-huge" style={{ lineHeight: 1, marginBottom: '0.3rem' }}>4 500F<span style={{ fontSize: '1.2rem', fontWeight: 600 }}>/mois</span></p>
               <p style={{ color: 'rgba(255,255,255,0.85)', fontSize: '1rem' }}>🔥 Offre de lancement — <strong>Économisez 20 500F chaque mois</strong></p>
             </div>
             <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn-primary btn-pulse" style={{ background: 'white', color: 'var(--senegal-red)', fontSize: '1.4rem', textDecoration: 'none', padding: '1.5rem 3.5rem' }} onClick={() => trackWhatsAppClick('offer_pro')}>

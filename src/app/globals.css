@@ -253,6 +253,26 @@ p {
   .whatsapp-float span {
     display: none; /* Hide text on mobile to save space */
   }
+
+  .price-big {
+    font-size: 1.8rem !important;
+  }
+
+  .price-huge {
+    font-size: 2.2rem !important;
+  }
+}
+
+.price-big {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--senegal-green);
+}
+
+.price-huge {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #FDEF42;
 }
 
 .grid-responsive {
