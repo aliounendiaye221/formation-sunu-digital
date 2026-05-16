@@ -32,7 +32,7 @@ export default function LandingPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const whatsappNumber = "221706506365"; // Numéro Sénégal
+  const whatsappNumber = "221786037913"; // Nouveau numéro SUNU DIGITAL
   const whatsappMessage = encodeURIComponent("Bonjour SUNU DIGITAL, je souhaite souscrire à l'Abonnement PRO pour automatiser ma création de vidéos avec l'IA !");
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
