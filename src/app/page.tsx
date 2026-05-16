@@ -609,7 +609,7 @@ export default function LandingPage() {
               Passez en mode <span style={{ color: '#FDEF42' }}>Pilote Automatique</span> avec l'Abonnement PRO
             </h2>
             <p style={{ color: 'rgba(255,255,255,0.95)', marginBottom: '2.5rem', fontSize: '1.25rem', lineHeight: 1.6 }}>
-              Ne perdez plus de temps avec les limites des outils gratuits. L'abonnement <strong>SUNU DIGITAL PRO</strong> vous donne l'arsenal complet pour générer 30 vidéos virales par mois sans effort. Nous configurons les outils pour vous, vous récoltez les résultats.
+              Ne perdez plus de temps avec les limites des outils gratuits. L'abonnement <strong>SUNU DIGITAL PRO</strong> vous donne l'arsenal complet pour générer jusqu'à 200 vidéos virales par mois sans effort. Nous configurons les outils pour vous, vous récoltez les résultats.
             </p>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: '1.5rem', marginBottom: '3rem' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
