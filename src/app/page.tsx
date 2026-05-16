@@ -265,7 +265,7 @@ export default function LandingPage() {
       }} />
 
       {/* Hero Section */}
-      <header className="container" style={{ paddingTop: '10rem', textAlign: 'center' }}>
+      <header className="container hero-padding" style={{ textAlign: 'center' }}>
         <div>
           <span style={{ 
             padding: '0.5rem 1.5rem', 
@@ -335,7 +335,7 @@ export default function LandingPage() {
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
+          <div className="grid-responsive">
             {demoVideos.map((d: any, i: number) => (
               <motion.div
                 key={i}
@@ -500,7 +500,7 @@ export default function LandingPage() {
             <h2 style={{ fontSize: '2.5rem', fontWeight: 800 }}>Ils ont sauté le pas</h2>
             <p>Découvrez les retours de ceux qui utilisent déjà l'IA avec SUNU DIGITAL.</p>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
+          <div className="grid-responsive">
             {testimonials.map((t: any, i: number) => (
               <div key={i} className="glass-card" style={{ padding: '2rem', background: 'white', position: 'relative', overflow: 'hidden' }}>
                 <MessageSquare size={80} style={{ position: 'absolute', right: '-10px', bottom: '-10px', opacity: 0.03, transform: 'rotate(-10deg)' }} />
@@ -532,7 +532,7 @@ export default function LandingPage() {
 
       {/* Lead Capture Section */}
       <section id="register" style={{ background: 'var(--card-bg)' }}>
-        <div className="container" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '4rem', alignItems: 'center' }}>
+        <div className="container grid-responsive" style={{ alignItems: 'center' }}>
           <div>
             <h2 style={{ fontSize: '2.5rem', fontWeight: 800, marginBottom: '1.5rem' }}>
               Rejoignez le <span className="gradient-text">Programme PRO</span>
@@ -611,7 +611,7 @@ export default function LandingPage() {
             <p style={{ color: 'rgba(255,255,255,0.95)', marginBottom: '2.5rem', fontSize: '1.25rem', lineHeight: 1.6 }}>
               Ne perdez plus de temps avec les limites des outils gratuits. L'abonnement <strong>SUNU DIGITAL PRO</strong> vous donne l'arsenal complet pour générer 30 vidéos virales par mois sans effort. Nous configurons les outils pour vous, vous récoltez les résultats.
             </p>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '2rem', marginBottom: '3rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: '1.5rem', marginBottom: '3rem' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
                 <Zap size={32} /> <span>Vitesse X10</span>
               </div>
