@@ -634,9 +634,9 @@ export default function LandingPage() {
           <p className="gradient-text" style={{ fontSize: '2rem', marginBottom: '1rem', fontWeight: 900 }}>SUNU DIGITAL</p>
           <p style={{ fontSize: '1rem' }}>&copy; 2026 SUNU DIGITAL - L'IA au service de votre créativité.</p>
           <div style={{ marginTop: '2rem', display: 'flex', justifyContent: 'center', gap: '2rem', flexWrap: 'wrap' }}>
-            <a href="#">Politique de confidentialité</a>
-            <a href="#">Conditions d'utilisation</a>
-            <a href={whatsappLink} target="_blank" rel="noopener noreferrer">Contact Direct</a>
+            <a href="/politique" style={{ textDecoration: 'none' }}>Politique de confidentialité</a>
+            <a href="/cgv" style={{ textDecoration: 'none' }}>Conditions d'utilisation (CGV)</a>
+            <a href={whatsappLink} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>Contact Direct</a>
           </div>
         </div>
       </footer>

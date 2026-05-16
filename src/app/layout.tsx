@@ -71,6 +71,17 @@ export default function RootLayout({
           `}
         </Script>
 
+        {/* Security / Anti-Download Script */}
+        <Script id="security-script" strategy="beforeInteractive">
+          {`
+            if (typeof window !== 'undefined') {
+              document.addEventListener('contextmenu', event => event.preventDefault());
+              document.addEventListener('dragstart', event => event.preventDefault());
+              document.addEventListener('selectstart', event => event.preventDefault());
+            }
+          `}
+        </Script>
+
         {/* Meta Pixel (Facebook Ads) */}
         <Script id="fb-pixel" strategy="afterInteractive">
           {`
