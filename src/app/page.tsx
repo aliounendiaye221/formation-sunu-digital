@@ -32,9 +32,16 @@ export default function LandingPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const whatsappNumber = "221786037913"; // Nouveau numéro SUNU DIGITAL
-  const whatsappMessage = encodeURIComponent("Bonjour SUNU DIGITAL, je souhaite souscrire à l'Abonnement PRO pour automatiser ma création de vidéos avec l'IA !");
-  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+  const whatsappNumber = "221786037913"; // WhatsApp Business SUNU DIGITAL
+  
+  const getWhatsAppLink = (message: string) => {
+    return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+  };
+
+  // Messages prédéfinis pour chaque contexte
+  const msgPro = "Bonjour SUNU DIGITAL, je souhaite souscrire à l'Abonnement PRO à 4 500F pour automatiser ma production de vidéos !";
+  const msgContact = "Bonjour SUNU DIGITAL, j'ai une question concernant votre formation sur l'IA.";
+  const msgHelp = "Bonjour SUNU DIGITAL, je viens de voir la formation et j'aimerais avoir plus de détails sur l'offre PRO.";
 
   const trackWhatsAppClick = (label: string) => {
     gtag.event({
@@ -410,7 +417,7 @@ export default function LandingPage() {
             <p className="price-big" style={{ lineHeight: 1 }}>4 500F<span style={{ fontSize: '1rem', fontWeight: 600 }}>/mois</span></p>
             <p style={{ fontSize: '0.95rem', color: '#555', marginTop: '0.5rem' }}>soit <strong>150F par jour</strong> — le prix d'un café ☕</p>
           </div>
-          <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn-primary btn-pulse" style={{ padding: '1.2rem 2.5rem', fontSize: '1.15rem' }} onClick={() => trackWhatsAppClick('bridge_button')}>
+          <a href={getWhatsAppLink(msgPro)} target="_blank" rel="noopener noreferrer" className="btn-primary btn-pulse" style={{ padding: '1.2rem 2.5rem', fontSize: '1.15rem' }} onClick={() => trackWhatsAppClick('bridge_button')}>
             <MessageCircle size={20} /> Je Veux Mon Abonnement PRO à 4 500F <ArrowRight size={20} />
           </a>
           <p style={{ fontSize: '0.85rem', color: '#999', marginTop: '1rem' }}>⚡ Accès immédiat après paiement. Annulation possible à tout moment.</p>
@@ -476,7 +483,7 @@ export default function LandingPage() {
           </div>
 
           <div style={{ textAlign: 'center', marginTop: '3rem' }}>
-            <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }} onClick={() => trackWhatsAppClick('demo_button')}>
+            <a href={getWhatsAppLink(msgHelp)} target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }} onClick={() => trackWhatsAppClick('demo_button')}>
               <MessageCircle size={20} /> Obtenir l'Abonnement PRO <ArrowRight size={18} />
             </a>
           </div>
@@ -639,7 +646,7 @@ export default function LandingPage() {
               <p className="price-huge" style={{ lineHeight: 1, marginBottom: '0.3rem' }}>4 500F<span style={{ fontSize: '1.2rem', fontWeight: 600 }}>/mois</span></p>
               <p style={{ color: 'rgba(255,255,255,0.85)', fontSize: '1rem' }}>🔥 Offre de lancement — <strong>Économisez 20 500F chaque mois</strong></p>
             </div>
-            <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn-primary btn-pulse" style={{ background: 'white', color: 'var(--senegal-red)', fontSize: '1.4rem', textDecoration: 'none', padding: '1.5rem 3.5rem' }} onClick={() => trackWhatsAppClick('offer_pro')}>
+            <a href={getWhatsAppLink(msgPro)} target="_blank" rel="noopener noreferrer" className="btn-primary btn-pulse" style={{ background: 'white', color: 'var(--senegal-red)', fontSize: '1.4rem', textDecoration: 'none', padding: '1.5rem 3.5rem' }} onClick={() => trackWhatsAppClick('offer_pro')}>
               <Zap size={24} fill="var(--senegal-red)" /> Oui, Je Veux l'Accès PRO à 4 500F !
             </a>
             <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.85rem', marginTop: '1rem' }}>⚡ Accès instantané après paiement · Satisfaction garantie</p>
@@ -655,13 +662,13 @@ export default function LandingPage() {
           <div style={{ marginTop: '2rem', display: 'flex', justifyContent: 'center', gap: '2rem', flexWrap: 'wrap' }}>
             <a href="/politique" style={{ textDecoration: 'none' }}>Politique de confidentialité</a>
             <a href="/cgv" style={{ textDecoration: 'none' }}>Conditions d'utilisation (CGV)</a>
-            <a href={whatsappLink} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>Contact Direct</a>
+            <a href={getWhatsAppLink(msgContact)} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>Contact Direct</a>
           </div>
         </div>
       </footer>
 
       {/* Floating WhatsApp Button */}
-      <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="whatsapp-float" onClick={() => trackWhatsAppClick('floating_button')}>
+      <a href={getWhatsAppLink(msgPro)} target="_blank" rel="noopener noreferrer" className="whatsapp-float" onClick={() => trackWhatsAppClick('floating_button')}>
         <MessageCircle size={24} /> <span>PRO — 4 500F/mois</span>
       </a>
     </div>
