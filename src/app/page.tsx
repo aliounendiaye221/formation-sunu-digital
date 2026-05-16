@@ -300,7 +300,7 @@ export default function LandingPage() {
                 <div style={{ display: 'flex', gap: '0.3rem', color: '#FDEF42', marginBottom: '0.6rem' }}>
                   {[1,2,3,4,5].map(i => <Sparkles key={i} size={18} fill="#FDEF42" style={{ filter: 'drop-shadow(0 0 5px rgba(253, 239, 66, 0.5))' }} />)}
                 </div>
-                <p style={{ color: 'white', fontSize: '1rem', fontWeight: '500' }}>+500 élèves déjà formés au Sénégal et en Afrique.</p>
+                <p style={{ color: 'white', fontSize: '1rem', fontWeight: '500' }}>+500 élèves déjà formés en Afrique et à l'international.</p>
               </div>
             </div>
           </div>
