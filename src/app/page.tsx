@@ -287,6 +287,12 @@ export default function LandingPage() {
             La stratégie exacte (sur PC et téléphone) pour créer des vidéos virales en moins de 5 minutes. <strong>Sans montrer votre visage, sans aucune compétence technique, et sans budget de production.</strong>
           </p>
           
+          <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', alignItems: 'center', marginBottom: '2.5rem' }}>
+            <a href="#training" className="btn-primary btn-pulse" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '1.25rem', padding: '1.4rem 3rem', textDecoration: 'none' }}>
+              <PlayCircle size={24} /> Regarder la Formation Gratuite <ArrowRight size={22} />
+            </a>
+          </div>
+
           <div style={{ marginBottom: '4rem', borderRadius: '30px', overflow: 'hidden', boxShadow: 'var(--shadow)', position: 'relative' }}>
             <img src="/hero.png" alt="AI Video Creation" style={{ width: '100%', display: 'block' }} />
             <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,0,0,0.5), transparent)', display: 'flex', alignItems: 'flex-end', padding: '2rem' }}>
@@ -298,83 +304,8 @@ export default function LandingPage() {
               </div>
             </div>
           </div>
-
-          <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', alignItems: 'center' }}>
-            <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn-primary btn-pulse" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '1.25rem', padding: '1.4rem 3rem' }} onClick={() => trackWhatsAppClick('hero_button')}>
-              <MessageCircle size={24} /> Abonnement PRO — Seulement 4 500F/mois <ArrowRight size={22} />
-            </a>
-          </div>
-          <p style={{ textAlign: 'center', marginTop: '1rem', fontSize: '0.95rem', color: '#888' }}>
-            💡 Moins cher qu'un repas au resto. Plus rentable qu'un an de formation.
-          </p>
         </div>
       </header>
-
-      {/* ========== DEMO SECTION ========== */}
-      <section id="demos" style={{ background: 'rgba(0,0,0,0.02)', padding: '6rem 0' }}>
-        <div className="container">
-          <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
-            <span style={{
-              padding: '0.4rem 1.2rem',
-              borderRadius: '50px',
-              background: 'rgba(227, 27, 35, 0.1)',
-              color: 'var(--senegal-red)',
-              fontWeight: '600',
-              fontSize: '0.85rem',
-              border: '1px solid var(--senegal-red)',
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: '0.5rem',
-              marginBottom: '1rem'
-            }}>
-              <Monitor size={16} /> CE QUE VOS VIDÉOS POURRAIENT RESSEMBLER
-            </span>
-            <h2 style={{ fontSize: '2.5rem', fontWeight: 800 }}>
-              Des Résultats <span className="gradient-text">Concrets & Prouvés</span>
-            </h2>
-            <p style={{ maxWidth: '600px', margin: '0 auto' }}>
-              Voici des exemples de vidéos créées 100% avec l'IA, par des apprenants SUNU DIGITAL, sans montrer leur visage.
-            </p>
-          </div>
-
-          <div className="grid-responsive">
-            {demoVideos.map((d: any, i: number) => (
-              <motion.div
-                key={i}
-                whileHover={{ y: -4 }}
-                transition={{ type: 'spring', stiffness: 300 }}
-                style={{ borderRadius: '20px', overflow: 'hidden', boxShadow: '0 4px 24px rgba(0,0,0,0.12)' }}
-              >
-                <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}>
-                  <iframe
-                    src={`https://www.youtube.com/embed/${d.youtubeId}?rel=0&modestbranding=1`}
-                    title={d.title}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    loading="lazy"
-                    style={{
-                      position: 'absolute', top: 0, left: 0,
-                      width: '100%', height: '100%', border: 'none'
-                    }}
-                  />
-                </div>
-                <div style={{ padding: '1.2rem', background: 'var(--card-bg)', backdropFilter: 'blur(8px)' }}>
-                  <p style={{ fontWeight: 700, fontSize: '1rem', marginBottom: '0.3rem', color: 'var(--foreground)', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                    {renderTitleIcon(d.iconType, 18)} {d.title}
-                  </p>
-                  <span style={{ color: 'var(--senegal-green)', fontSize: '0.85rem', fontWeight: 600 }}>👁 {d.views}</span>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-
-          <div style={{ textAlign: 'center', marginTop: '3rem' }}>
-            <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }} onClick={() => trackWhatsAppClick('demo_button')}>
-              <MessageCircle size={20} /> Obtenir l'Abonnement PRO <ArrowRight size={18} />
-            </a>
-          </div>
-        </div>
-      </section>
 
       {/* ========== TRAINING VIDEOS SECTION ========== */}
       <section id="training" className="container" style={{ padding: '6rem 0' }}>
@@ -483,6 +414,72 @@ export default function LandingPage() {
             <MessageCircle size={20} /> Je Veux Mon Abonnement PRO à 4 500F <ArrowRight size={20} />
           </a>
           <p style={{ fontSize: '0.85rem', color: '#999', marginTop: '1rem' }}>⚡ Accès immédiat après paiement. Annulation possible à tout moment.</p>
+        </div>
+      </section>
+
+      {/* ========== DEMO SECTION ========== */}
+      <section id="demos" style={{ background: 'rgba(0,0,0,0.02)', padding: '6rem 0' }}>
+        <div className="container">
+          <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+            <span style={{
+              padding: '0.4rem 1.2rem',
+              borderRadius: '50px',
+              background: 'rgba(227, 27, 35, 0.1)',
+              color: 'var(--senegal-red)',
+              fontWeight: '600',
+              fontSize: '0.85rem',
+              border: '1px solid var(--senegal-red)',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '0.5rem',
+              marginBottom: '1rem'
+            }}>
+              <Monitor size={16} /> CE QUE VOS VIDÉOS POURRAIENT RESSEMBLER
+            </span>
+            <h2 style={{ fontSize: '2.5rem', fontWeight: 800 }}>
+              Des Résultats <span className="gradient-text">Concrets & Prouvés</span>
+            </h2>
+            <p style={{ maxWidth: '600px', margin: '0 auto' }}>
+              Voici des exemples de vidéos créées 100% avec l'IA, par des apprenants SUNU DIGITAL, sans montrer leur visage.
+            </p>
+          </div>
+
+          <div className="grid-responsive">
+            {demoVideos.map((d: any, i: number) => (
+              <motion.div
+                key={i}
+                whileHover={{ y: -4 }}
+                transition={{ type: 'spring', stiffness: 300 }}
+                style={{ borderRadius: '20px', overflow: 'hidden', boxShadow: '0 4px 24px rgba(0,0,0,0.12)' }}
+              >
+                <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}>
+                  <iframe
+                    src={`https://www.youtube.com/embed/${d.youtubeId}?rel=0&modestbranding=1`}
+                    title={d.title}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    loading="lazy"
+                    style={{
+                      position: 'absolute', top: 0, left: 0,
+                      width: '100%', height: '100%', border: 'none'
+                    }}
+                  />
+                </div>
+                <div style={{ padding: '1.2rem', background: 'var(--card-bg)', backdropFilter: 'blur(8px)' }}>
+                  <p style={{ fontWeight: 700, fontSize: '1rem', marginBottom: '0.3rem', color: 'var(--foreground)', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                    {renderTitleIcon(d.iconType, 18)} {d.title}
+                  </p>
+                  <span style={{ color: 'var(--senegal-green)', fontSize: '0.85rem', fontWeight: 600 }}>👁 {d.views}</span>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          <div style={{ textAlign: 'center', marginTop: '3rem' }}>
+            <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }} onClick={() => trackWhatsAppClick('demo_button')}>
+              <MessageCircle size={20} /> Obtenir l'Abonnement PRO <ArrowRight size={18} />
+            </a>
+          </div>
         </div>
       </section>
 

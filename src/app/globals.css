@@ -83,6 +83,11 @@ html, body {
   box-shadow: 0 15px 30px rgba(0,0,0,0.3);
 }
 
+.btn-training-hero:hover {
+  background: rgba(0, 132, 61, 0.05) !important;
+  transform: translateY(-3px);
+}
+
 @keyframes pulse {
   0% { box-shadow: 0 0 0 0 rgba(0, 132, 61, 0.4); }
   70% { box-shadow: 0 0 0 15px rgba(0, 132, 61, 0); }
