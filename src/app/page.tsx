@@ -299,11 +299,14 @@ export default function LandingPage() {
             </div>
           </div>
 
-          <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+          <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', alignItems: 'center' }}>
             <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn-primary btn-pulse" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '1.25rem', padding: '1.4rem 3rem' }} onClick={() => trackWhatsAppClick('hero_button')}>
-              <MessageCircle size={24} /> Obtenir l'Abonnement PRO sur WhatsApp <ArrowRight size={22} />
+              <MessageCircle size={24} /> Abonnement PRO — Seulement 4 500F/mois <ArrowRight size={22} />
             </a>
           </div>
+          <p style={{ textAlign: 'center', marginTop: '1rem', fontSize: '0.95rem', color: '#888' }}>
+            💡 Moins cher qu'un repas au resto. Plus rentable qu'un an de formation.
+          </p>
         </div>
       </header>
 
@@ -468,14 +471,18 @@ export default function LandingPage() {
           <h3 style={{ fontSize: '2rem', fontWeight: 800, marginBottom: '1.5rem', color: 'var(--foreground)' }}>
             Vous venez de découvrir le <span style={{ color: 'var(--senegal-green)' }}>pouvoir</span> de l'IA.
           </h3>
-          <p style={{ fontSize: '1.15rem', marginBottom: '2.5rem', maxWidth: '750px', margin: '0 auto 2.5rem', lineHeight: '1.7', color: '#555' }}>
+          <p style={{ fontSize: '1.15rem', marginBottom: '1.5rem', maxWidth: '750px', margin: '0 auto 1.5rem', lineHeight: '1.7', color: '#555' }}>
             Mais imaginez si vous pouviez multiplier ces résultats par 100. Les créateurs qui réussissent ne passent pas leurs journées à bricoler avec des outils gratuits et limités. Ils automatisent tout le processus.
-            <br/><br/>
-            Ne laissez pas vos concurrents prendre l'avance. <strong>Débloquez votre véritable potentiel de revenus dès aujourd'hui avec l'Abonnement PRO.</strong>
           </p>
-          <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ padding: '1rem 2rem', fontSize: '1.1rem' }} onClick={() => trackWhatsAppClick('bridge_button')}>
-            <MessageCircle size={20} /> Obtenir l'Abonnement PRO <ArrowRight size={20} />
+          <div style={{ margin: '0 auto 2rem', padding: '1.5rem', background: 'rgba(0, 132, 61, 0.05)', borderRadius: '16px', maxWidth: '500px', border: '2px dashed var(--senegal-green)' }}>
+            <p style={{ fontSize: '0.9rem', color: '#999', marginBottom: '0.3rem', textDecoration: 'line-through' }}>Valeur réelle : 25 000F/mois</p>
+            <p style={{ fontSize: '2.8rem', fontWeight: 900, color: 'var(--senegal-green)', lineHeight: 1 }}>4 500F<span style={{ fontSize: '1rem', fontWeight: 600 }}>/mois</span></p>
+            <p style={{ fontSize: '0.95rem', color: '#555', marginTop: '0.5rem' }}>soit <strong>150F par jour</strong> — le prix d'un café ☕</p>
+          </div>
+          <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn-primary btn-pulse" style={{ padding: '1.2rem 2.5rem', fontSize: '1.15rem' }} onClick={() => trackWhatsAppClick('bridge_button')}>
+            <MessageCircle size={20} /> Je Veux Mon Abonnement PRO à 4 500F <ArrowRight size={20} />
           </a>
+          <p style={{ fontSize: '0.85rem', color: '#999', marginTop: '1rem' }}>⚡ Accès immédiat après paiement. Annulation possible à tout moment.</p>
         </div>
       </section>
 
@@ -552,7 +559,14 @@ export default function LandingPage() {
             </ul>
           </div>
           <div className="glass-card" style={{ padding: '3rem', background: 'var(--background)' }}>
-            <h3 style={{ marginBottom: '1.5rem', textAlign: 'center' }}>Accès Direct WhatsApp</h3>
+            <div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
+              <p style={{ fontSize: '0.85rem', color: '#999', textDecoration: 'line-through', marginBottom: '0.2rem' }}>25 000F/mois</p>
+              <h3 style={{ marginBottom: '0.3rem' }}>
+                <span style={{ fontSize: '2.5rem', fontWeight: 900, color: 'var(--senegal-green)' }}>4 500F</span>
+                <span style={{ fontSize: '1rem', color: '#666' }}>/mois</span>
+              </h3>
+              <p style={{ fontSize: '0.85rem', color: 'var(--senegal-red)', fontWeight: 700 }}>🔥 -82% — Offre de lancement limitée</p>
+            </div>
             <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
               <div style={{ position: 'relative' }}>
                 <Mail style={{ position: 'absolute', left: '1rem', top: '50%', transform: 'translateY(-50%)', color: '#999' }} size={20} />
@@ -574,10 +588,10 @@ export default function LandingPage() {
                 />
               </div>
               <button type="submit" className="btn-primary btn-pulse" style={{ width: '100%', fontSize: '1.2rem', padding: '1.4rem' }} disabled={isSubmitting}>
-                <MessageCircle size={22} /> {isSubmitting ? "Redirection..." : "Souscrire à l'Abonnement PRO"}
+                <MessageCircle size={22} /> {isSubmitting ? "Redirection..." : "Débloquer l'Accès PRO — 4 500F/mois"}
               </button>
-              <p style={{ fontSize: '0.8rem', textAlign: 'center', marginTop: '1rem' }}>
-                🚀 Vous serez redirigé vers notre WhatsApp pour l'abonnement.
+              <p style={{ fontSize: '0.8rem', textAlign: 'center', marginTop: '0.5rem', color: '#999' }}>
+                🔒 Paiement sécurisé · Annulation à tout moment · Accès immédiat
               </p>
             </form>
           </div>
@@ -609,12 +623,12 @@ export default function LandingPage() {
             <h2 style={{ fontSize: '3rem', fontWeight: 900, marginBottom: '1.5rem', color: 'white', lineHeight: 1.1 }}>
               Passez en mode <span style={{ color: '#FDEF42' }}>Pilote Automatique</span> avec l'Abonnement PRO
             </h2>
-            <p style={{ color: 'rgba(255,255,255,0.95)', marginBottom: '2.5rem', fontSize: '1.25rem', lineHeight: 1.6 }}>
+            <p style={{ color: 'rgba(255,255,255,0.95)', marginBottom: '1.5rem', fontSize: '1.25rem', lineHeight: 1.6 }}>
               Ne perdez plus de temps avec les limites des outils gratuits. L'abonnement <strong>SUNU DIGITAL PRO</strong> vous donne l'arsenal complet pour générer jusqu'à 100 vidéos virales par jour sans effort. Nous configurons les outils pour vous, vous récoltez les résultats.
             </p>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: '1.5rem', marginBottom: '3rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: '1.5rem', marginBottom: '2rem' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                <Zap size={32} /> <span>Vitesse X10</span>
+                <Zap size={32} /> <span>100 vidéos/jour</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
                 <Globe size={32} /> <span>Multi-plateformes</span>
@@ -623,9 +637,15 @@ export default function LandingPage() {
                 <Award size={32} /> <span>Qualité Premium</span>
               </div>
             </div>
+            <div style={{ background: 'rgba(0,0,0,0.25)', borderRadius: '20px', padding: '2rem', marginBottom: '2.5rem', textAlign: 'center', backdropFilter: 'blur(10px)' }}>
+              <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.95rem', textDecoration: 'line-through', marginBottom: '0.3rem' }}>Prix normal : 25 000F/mois</p>
+              <p style={{ fontSize: '3.5rem', fontWeight: 900, color: '#FDEF42', lineHeight: 1, marginBottom: '0.3rem' }}>4 500F<span style={{ fontSize: '1.2rem', fontWeight: 600 }}>/mois</span></p>
+              <p style={{ color: 'rgba(255,255,255,0.85)', fontSize: '1rem' }}>🔥 Offre de lancement — <strong>Économisez 20 500F chaque mois</strong></p>
+            </div>
             <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn-primary btn-pulse" style={{ background: 'white', color: 'var(--senegal-red)', fontSize: '1.4rem', textDecoration: 'none', padding: '1.5rem 3.5rem' }} onClick={() => trackWhatsAppClick('offer_pro')}>
-              <Zap size={24} fill="var(--senegal-red)" /> Rejoindre l'Offre PRO sur WhatsApp
+              <Zap size={24} fill="var(--senegal-red)" /> Oui, Je Veux l'Accès PRO à 4 500F !
             </a>
+            <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.85rem', marginTop: '1rem' }}>⚡ Accès instantané après paiement · Satisfaction garantie</p>
           </div>
         </div>
       </section>
@@ -645,7 +665,7 @@ export default function LandingPage() {
 
       {/* Floating WhatsApp Button */}
       <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="whatsapp-float" onClick={() => trackWhatsAppClick('floating_button')}>
-        <MessageCircle size={24} /> <span>S'abonner à l'Offre PRO</span>
+        <MessageCircle size={24} /> <span>PRO — 4 500F/mois</span>
       </a>
     </div>
   );
