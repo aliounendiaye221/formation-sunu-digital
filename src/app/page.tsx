@@ -67,7 +67,7 @@ export default function LandingPage() {
       tag: "Gratuit"
     },
     {
-      youtubeId: "VOTRE_VIDEO_3_ICI", // ← Remplacer par l'ID de la 3e vidéo
+      youtubeId: "85hGf5Asq0o", // Mise à jour de la vidéo 3
       iconType: 'rocket',
       title: "La Machine à Vues — Comment Transformer l'IA en un Business Rentable",
       desc: "Le secret le mieux gardé des créateurs à succès. Découvrez le système exact pour monétiser vos vues, attirer des clients en automatique et générer des revenus récurrents.",
