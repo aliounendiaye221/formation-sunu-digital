@@ -266,11 +266,7 @@ export default function LandingPage() {
 
       {/* Hero Section */}
       <header className="container" style={{ paddingTop: '10rem', textAlign: 'center' }}>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
+        <div>
           <span style={{ 
             padding: '0.5rem 1.5rem', 
             borderRadius: '50px', 
@@ -309,7 +305,7 @@ export default function LandingPage() {
               <MessageCircle size={24} /> Obtenir l'Abonnement PRO sur WhatsApp <ArrowRight size={22} />
             </a>
           </div>
-        </motion.div>
+        </div>
       </header>
 
       {/* ========== DEMO SECTION ========== */}
@@ -405,12 +401,8 @@ export default function LandingPage() {
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '4rem' }}>
           {trainingVideos.map((v: any, i: number) => (
-            <motion.div
+            <div
               key={i}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: i * 0.1 }}
               style={{
                 display: 'grid',
                 gridTemplateColumns: i % 2 === 0 ? '3fr 2fr' : '2fr 3fr',
@@ -464,16 +456,12 @@ export default function LandingPage() {
                   </span>
                 </div>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
 
         {/* Psychological Bridge to PRO Offer */}
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+        <div 
           style={{ marginTop: '5rem', padding: '3.5rem 2rem', background: 'var(--card-bg)', borderRadius: '24px', textAlign: 'center', boxShadow: '0 10px 40px rgba(0,0,0,0.08)', border: '1px solid rgba(0, 132, 61, 0.1)' }}
         >
           <h3 style={{ fontSize: '2rem', fontWeight: 800, marginBottom: '1.5rem', color: 'var(--foreground)' }}>
@@ -487,7 +475,7 @@ export default function LandingPage() {
           <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ padding: '1rem 2rem', fontSize: '1.1rem' }} onClick={() => trackWhatsAppClick('bridge_button')}>
             <MessageCircle size={20} /> Obtenir l'Abonnement PRO <ArrowRight size={20} />
           </a>
-        </motion.div>
+        </div>
       </section>
 
       {/* Testimonials Section */}

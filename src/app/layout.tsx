@@ -34,6 +34,11 @@ export const metadata: Metadata = {
     description: "3 vidéos gratuites pour maîtriser la création vidéo avec l'IA.",
     images: ["/hero.png"],
   },
+  icons: {
+    icon: '/logo.png',
+    shortcut: '/logo.png',
+    apple: '/logo.png',
+  },
   robots: {
     index: true,
     follow: true,
