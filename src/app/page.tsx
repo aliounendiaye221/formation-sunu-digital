@@ -134,7 +134,7 @@ export default function LandingPage() {
 
     // Simulation d'envoi et redirection
     setTimeout(() => {
-      window.location.href = whatsappLink;
+      window.location.href = getWhatsAppLink(msgPro);
     }, 1000);
   };
 
@@ -178,7 +178,7 @@ export default function LandingPage() {
               <MessageSquare size={18} /> Avis
             </a>
             <a 
-              href={whatsappLink} 
+              href={getWhatsAppLink(msgContact)} 
               target="_blank" 
               rel="noopener noreferrer" 
               className="btn-primary" 
@@ -234,7 +234,7 @@ export default function LandingPage() {
               📩 S'inscrire
             </a>
             <a 
-              href={whatsappLink} 
+              href={getWhatsAppLink(msgContact)} 
               target="_blank" 
               rel="noopener noreferrer"
               className="btn-primary" 
