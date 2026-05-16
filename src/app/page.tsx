@@ -69,8 +69,8 @@ export default function LandingPage() {
     {
       youtubeId: "VOTRE_VIDEO_3_ICI", // ← Remplacer par l'ID de la 3e vidéo
       iconType: 'rocket',
-      title: "Passez à l'Action Maintenant — La Stratégie Pour Transformer Vos Vidéos IA en Revenus Réels",
-      desc: "La vidéo finale qui change tout. Découvrez comment monétiser vos compétences IA, attirer des clients et générer des revenus récurrents grâce au contenu vidéo automatisé.",
+      title: "La Machine à Vues — Comment Transformer l'IA en un Business Rentable",
+      desc: "Le secret le mieux gardé des créateurs à succès. Découvrez le système exact pour monétiser vos vues, attirer des clients en automatique et générer des revenus récurrents.",
       duration: "À voir",
       tag: "Gratuit"
     }
@@ -278,14 +278,13 @@ export default function LandingPage() {
             display: 'inline-block',
             border: '1px solid var(--senegal-green)'
           }}>
-            FORMATION 100% GRATUITE
+            🔥 LA MÉTHODE QUI CHANGE TOUT
           </span>
           <h1 style={{ marginTop: '1rem' }}>
-            Maîtrisez la Création de Vidéos avec <br />
-            <span className="gradient-text">L'Intelligence Artificielle</span>
+            Arrêtez de Perdre des Heures au Montage. <br /> Dominez avec <span className="gradient-text">L'Intelligence Artificielle</span>
           </h1>
           <p style={{ maxWidth: '700px', margin: '0 auto 2.5rem' }}>
-            3 vidéos gratuites pour maîtriser la création vidéo IA — <strong>sur PC et sur téléphone</strong>. Créez du contenu professionnel sans montrer votre visage, sans expérience, sans payer un seul franc.
+            La stratégie exacte (sur PC et téléphone) pour créer des vidéos virales en moins de 5 minutes. <strong>Sans montrer votre visage, sans aucune compétence technique, et sans budget de production.</strong>
           </p>
           
           <div style={{ marginBottom: '4rem', borderRadius: '30px', overflow: 'hidden', boxShadow: 'var(--shadow)', position: 'relative' }}>
@@ -465,12 +464,12 @@ export default function LandingPage() {
           style={{ marginTop: '5rem', padding: '3.5rem 2rem', background: 'var(--card-bg)', borderRadius: '24px', textAlign: 'center', boxShadow: '0 10px 40px rgba(0,0,0,0.08)', border: '1px solid rgba(0, 132, 61, 0.1)' }}
         >
           <h3 style={{ fontSize: '2rem', fontWeight: 800, marginBottom: '1.5rem', color: 'var(--foreground)' }}>
-            Vous savez maintenant générer <span style={{ color: 'var(--senegal-green)' }}>une</span> vidéo.
+            Vous venez de découvrir le <span style={{ color: 'var(--senegal-green)' }}>pouvoir</span> de l'IA.
           </h3>
           <p style={{ fontSize: '1.15rem', marginBottom: '2.5rem', maxWidth: '750px', margin: '0 auto 2.5rem', lineHeight: '1.7', color: '#555' }}>
-            Mais si vous voulez vraiment monétiser et exploser vos statistiques, vous ne pouvez pas vous permettre de jongler entre les limites des outils gratuits tous les jours. 
+            Mais imaginez si vous pouviez multiplier ces résultats par 100. Les créateurs qui réussissent ne passent pas leurs journées à bricoler avec des outils gratuits et limités. Ils automatisent tout le processus.
             <br/><br/>
-            C'est pour cela que les créateurs à succès utilisent l'automatisation. <strong>C'est là que notre Abonnement PRO intervient.</strong>
+            Ne laissez pas vos concurrents prendre l'avance. <strong>Débloquez votre véritable potentiel de revenus dès aujourd'hui avec l'Abonnement PRO.</strong>
           </p>
           <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ padding: '1rem 2rem', fontSize: '1.1rem' }} onClick={() => trackWhatsAppClick('bridge_button')}>
             <MessageCircle size={20} /> Obtenir l'Abonnement PRO <ArrowRight size={20} />
@@ -535,14 +534,14 @@ export default function LandingPage() {
         <div className="container grid-responsive" style={{ alignItems: 'center' }}>
           <div>
             <h2 style={{ fontSize: '2.5rem', fontWeight: 800, marginBottom: '1.5rem' }}>
-              Rejoignez le <span className="gradient-text">Programme PRO</span>
+              Sécurisez Votre <span className="gradient-text">Avantage Déloyal</span>
             </h2>
             <ul style={{ listStyle: 'none', padding: 0 }}>
               {[
-                "Accès immédiat via WhatsApp",
-                "Fiches récapitulatives offertes",
-                "Accompagnement personnalisé",
-                "Communauté de créateurs passionnés"
+                "Automatisation totale de votre production",
+                "Jusqu'à 200 vidéos prêtes à l'emploi par mois",
+                "Stratégies de monétisation exclusives",
+                "Accompagnement privé et support prioritaire"
               ].map((item: string, i: number) => (
                 <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1rem', fontSize: '1.1rem' }}>
                   <CheckCircle2 color="var(--senegal-green)" /> {item}
