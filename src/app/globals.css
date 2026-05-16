@@ -123,6 +123,7 @@ html, body {
 
 section {
   padding: 6rem 0;
+  scroll-margin-top: 80px;
 }
 
 h1 {
@@ -200,6 +201,7 @@ p {
   
   section {
     padding: 3rem 0;
+    scroll-margin-top: 70px;
   }
   
   .container {
